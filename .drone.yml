@@ -17,7 +17,7 @@ pipeline:
   backend-2:
     image: golang
     group: build
-    secrets: [test_sc ]
+    secrets: 
         - source: test_sc
           target: ttyy
     commands:
