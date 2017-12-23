@@ -12,6 +12,8 @@ pipeline:
     commands:
       - echo "sleep 5"
       - sleep 5
+      - touch a.txt
+      - ls
   backend-2:
     image: golang
     group: build
