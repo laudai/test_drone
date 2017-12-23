@@ -18,7 +18,10 @@ pipeline:
     image: golang
     group: build
     secrets: [test_sc ]
+        - source: test_sc
+        - target: ttyy
     commands:
       - echo "sleep 15"
       - sleep 15
       - echo $TEST_SC
+      - echo $TTYY
