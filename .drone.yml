@@ -17,6 +17,8 @@ pipeline:
   backend-2:
     image: golang
     group: build
+    secret: [test_sc ]
     commands:
       - echo "sleep 15"
       - sleep 15
+      - echo test_sc
